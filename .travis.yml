@@ -2,8 +2,7 @@ language: go
 
 # Golang version matrix
 go:
-    - 1.5.3
-    - tip
+    - 1.6
 
 before_install:
     # Install code coverage / coveralls tooling
@@ -35,6 +34,7 @@ before_script:
 
     # Perform static code analysys
     - go tool vet -unsafeptr=false `go list ./... | grep -v Godeps | sed -e "s,^,$GOPATH/src/,;s,.*:,,"`
+
 
 script:
     # go list supply import paths for all sub directories.

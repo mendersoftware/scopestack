@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "FLmqfKOP+8V5+LJm1568MwJf4gk=",
+			"path": "github.com/mendersoftware/mendertesting",
+			"revision": "731be57371e8c3dde8fff60dd0d7d8171ad7f472",
+			"revisionTime": "2017-07-12T12:07:28Z"
+		}
+	],
+	"rootPath": "github.com/mendersoftware/scopestack"
+}

@@ -1,4 +1,4 @@
-// Copyright 2016 Mender Software AS
+// Copyright 2017 Northern.tech AS
 //
 //    Licensed under the Apache License, Version 2.0 (the "License");
 //    you may not use this file except in compliance with the License.
@@ -53,5 +53,11 @@ func AssertErrorSubstring(t *testing.T, err error, sub string) {
 	if strings.Index(err.Error(), sub) < 0 {
 		failWithPrefixf(t, 1, "'%s' does not occur in error '%s'",
 			sub, err.Error())
+	}
+}
+
+func AssertNoError(t *testing.T, err error) {
+	if err != nil {
+		failWithPrefixf(t, 1, "Error not expected: %s", err.Error())
 	}
 }

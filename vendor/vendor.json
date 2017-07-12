@@ -1,0 +1,11 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"path": "github.com/mendersoftware/mendertesting",
+			"revision": "185b0658c0984b85ed862f55c77a62ba8401fca7"
+		}
+	],
+	"rootPath": "github.com/mendersoftware/scopestack"
+}
